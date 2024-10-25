@@ -16,4 +16,17 @@ $(document).on("click", "#confirm", function() {
             }
     }
      navigator.notification.confirm("Deseja doar $1 aos carentes?", confirma, "Escolha", ['Aceito','É golpe']); 
-}); 
+})
+
+$(document).on("click","#beep",function(){
+    navigator.notification.beep(5);
+
+
+})
+
+$(document).on("click","#vibrar",function(){
+    navigator.vibrate(1000);
+
+
+}
+); 
